@@ -1,0 +1,2 @@
+This is the content of file 1.txt.
+It can contain any text or data that you want to distribute to your hosts.
