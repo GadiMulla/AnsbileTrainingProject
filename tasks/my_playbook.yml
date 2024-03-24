@@ -1,0 +1,7 @@
+# my_playbook.yml
+
+---
+- name: Apply my role
+  hosts: your_hosts
+  roles:
+    - my_role
