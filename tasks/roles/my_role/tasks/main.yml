@@ -1,0 +1,27 @@
+# tasks/main.yml
+
+---
+- name: Copy file 1.txt to host
+  copy:
+    src: /home/gadi/Ansible/Training_Project/logfiles/1.txt
+    dest: /home/vboxuser/ansible/1.txt
+
+- name: Print message 3 times using loop
+  debug:
+    msg: "This message is printed {{ item }} times"
+  loop: "{{ range(1, 4) | list }}"
+
+- name: Print OS family of host
+  debug:
+    msg: "OS family of host is {{ ansible_os_family }}"
+
+- name: Create a variable and print it
+  set_fact:
+    custom_variable: "This is a text variable"
+- debug:
+    msg: "{{ custom_variable }}"
+
+- name: Delegate task to master to save host IP in log
+  command: echo "Host IP: 10.0.0.32" >> /home/vboxuser/ansible/log.txt
+  delegate_to: localhost
+
