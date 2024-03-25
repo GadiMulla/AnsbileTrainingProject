@@ -5,7 +5,7 @@ The Ansible Training Project provides a hands-on learning experience for masteri
 ## Installation
 To use this project, follow these steps:
 1. Clone the repository to your local machine:
-git clone https://github.com/your_username/ansible-training-project.git
+git clone https://github.com/GadiMulla/ansible-training-project.git
 2. Install Ansible on your local machine.
 3. Navigate to the project directory:
 cd ansible-training-project
